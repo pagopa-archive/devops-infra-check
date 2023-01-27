@@ -48,7 +48,7 @@ stages:
         steps:
           - task: CmdLine@2
             inputs:
-              script: 'ls -la' 
+              script: 'ls -la'
           - task: Docker@2
             displayName: 'publish_image_to_${{ variables.environment }}'
             condition: succeeded()
